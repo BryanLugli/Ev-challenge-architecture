@@ -9,142 +9,77 @@
 
 # Objetivo do Projeto
 
-Este projeto tem como objetivo propor uma solução computacional eficiente para sistemas de eletropostos, utilizando conceitos de Arquitetura de Computadores, Sistemas Embarcados e Programação em Assembly.
+O objetivo deste projeto é desenvolver uma proposta de solução computacional eficiente para eletropostos, utilizando conceitos de Arquitetura de Computadores e programação em Assembly.
 
-A proposta busca reduzir o consumo energético causado pelo processamento computacional dos eletropostos, tornando o sistema mais sustentável e eficiente.
+A ideia principal é reduzir o consumo energético causado pelo processamento computacional dos sistemas internos dos eletropostos, tornando o funcionamento mais eficiente e sustentável.
 
 ---
 
-# Problema Identificado
+# Problema
 
-Atualmente, muitos eletropostos utilizam softwares desenvolvidos em linguagens de alto nível executados em hardwares genéricos.
+Atualmente, muitos eletropostos utilizam softwares desenvolvidos em linguagens de alto nível executados em hardwares genéricos. Isso pode gerar maior consumo energético e uso excessivo do processador, principalmente em tarefas simples como autenticação de usuários, leitura de sensores e controle de carregamento.
 
-Esse modelo pode gerar diversos problemas, como:
-
-- Maior consumo energético
-- Uso excessivo de CPU
-- Processamento desnecessário
-- Maior quantidade de ciclos de clock
-- Necessidade de hardware mais potente
-- Menor eficiência energética
-
-Mesmo pequenas operações, como autenticação de usuário ou leitura de sensores, podem consumir recursos computacionais acima do necessário.
+Além disso, o excesso de processamento aumenta a quantidade de ciclos de CPU utilizados, reduzindo a eficiência energética do sistema.
 
 ---
 
 # Justificativa
 
-A mobilidade elétrica depende diretamente da eficiência energética.
+Mesmo sendo utilizados em um contexto sustentável, os eletropostos também precisam possuir sistemas computacionais eficientes.
 
-Embora os eletropostos sejam projetados para fornecer energia limpa aos veículos elétricos, o próprio sistema computacional interno pode gerar desperdício energético significativo.
-
-Por isso, otimizar o software e a arquitetura utilizada contribui diretamente para:
-
-- Sustentabilidade
-- Economia de energia
-- Melhor aproveitamento de energias renováveis
-- Redução de custos operacionais
+A otimização do software e da arquitetura utilizada pode reduzir desperdícios computacionais, melhorar o aproveitamento da energia e diminuir custos operacionais.
 
 ---
 
 # Proposta de Solução
 
-Nossa proposta consiste no desenvolvimento de um módulo computacional otimizado em Assembly utilizando arquitetura RISC-V.
+Nossa proposta consiste no desenvolvimento de um módulo otimizado em Assembly utilizando arquitetura RISC-V.
 
-O sistema será responsável por operações críticas do eletroposto, como:
+O sistema será responsável por funções importantes do eletroposto, como:
+- autenticação de usuários
+- leitura de sensores
+- controle de carregamento
+- monitoramento energético
 
-- Autenticação de usuários
-- Controle de carregamento
-- Leitura de sensores
-- Monitoramento energético
-- Controle de corrente elétrica
-
-A utilização de Assembly permite maior controle sobre o hardware, reduzindo o número de instruções executadas e diminuindo o consumo energético.
+A utilização de Assembly permite maior controle sobre o hardware, reduzindo a quantidade de instruções executadas e diminuindo o consumo energético.
 
 ---
 
 # Arquitetura Utilizada
 
-## RISC-V
+Foi escolhida a arquitetura RISC-V por possuir um conjunto de instruções mais simples e eficiente.
 
-Escolhemos a arquitetura RISC-V devido às suas características de eficiência energética e simplicidade.
-
-### Características do RISC-V
-- Menor conjunto de instruções
-- Execução mais rápida
-- Menor consumo energético
-- Melhor desempenho em sistemas embarcados
-- Hardware mais simples
+Diferente de arquiteturas mais complexas, o modelo RISC trabalha com menos instruções, permitindo execução mais rápida e menor gasto energético, sendo muito utilizado em sistemas embarcados.
 
 ---
 
-# Comparação: RISC vs CISC
+# Conceitos Aplicados
 
-| Característica | RISC | CISC |
-|---|---|---|
-| Quantidade de instruções | Pequena | Grande |
-| Complexidade | Baixa | Alta |
-| Consumo energético | Menor | Maior |
-| Eficiência | Alta | Média |
-| Hardware | Mais simples | Mais complexo |
-| Ideal para embarcados | Sim | Nem sempre |
+## Pipeline
 
-## Conclusão da Comparação
+O pipeline permite que o processador execute diferentes etapas simultaneamente, aumentando o desempenho e reduzindo desperdícios computacionais.
 
-A arquitetura RISC apresenta maior eficiência energética, sendo mais adequada para aplicações sustentáveis e sistemas embarcados de baixo consumo.
+## Clock e ciclos de CPU
 
----
+Quanto maior a quantidade de ciclos utilizados por um programa, maior será o consumo de energia.
 
-# Comparação: Linguagem de Alto Nível vs Assembly
+Com Assembly, é possível reduzir instruções desnecessárias e melhorar a eficiência do processamento.
 
-| Aspecto | Alto Nível | Assembly |
-|---|---|---|
-| Facilidade de programação | Alta | Média |
-| Controle do hardware | Baixo | Total |
-| Quantidade de instruções | Maior | Menor |
-| Consumo energético | Maior | Menor |
-| Eficiência computacional | Média | Alta |
+## Sistemas embarcados
+
+O projeto foi pensado para rodar em sistemas embarcados e microcontroladores de baixo consumo energético.
 
 ---
 
-# Pipeline
+# Comparação entre Alto Nível e Assembly
 
-O conceito de pipeline permite que o processador execute múltiplas etapas simultaneamente, aumentando o desempenho computacional.
+Linguagens de alto nível são mais fáceis de programar, porém geram mais instruções durante a compilação.
 
-## Benefícios
-- Maior velocidade
-- Melhor aproveitamento da CPU
-- Menor desperdício computacional
-- Maior eficiência energética
+Já o Assembly possui acesso mais direto ao hardware, permitindo maior otimização e menor uso do processador.
 
 ---
 
-# Clock e Ciclos de CPU
-
-O clock determina a velocidade de execução das instruções do processador.
-
-Quanto maior a quantidade de ciclos utilizados por um programa:
-- maior será o consumo energético
-- maior será o aquecimento
-- menor será a eficiência
-
-A programação em Assembly reduz a quantidade de ciclos necessários para execução das tarefas.
-
----
-
-# Sistemas Embarcados
-
-O projeto foi pensado para funcionar em sistemas embarcados e microcontroladores de baixo consumo.
-
-## Vantagens
-- Menor gasto energético
-- Hardware compacto
-- Maior eficiência
-- Menor custo operacional
-
----
-
-# Exemplo de Código em Alto Nível (C)
+# Exemplo de Código em C
 
 ```c
 int soma(int a, int b){
@@ -164,46 +99,21 @@ ADD R3, R1, R2
 
 ---
 
-# Comparação entre os códigos
-
-O código em Assembly:
-- executa menos instruções
-- possui menor abstração
-- reduz o uso da CPU
-- consome menos energia
-
-Já linguagens de alto nível geram instruções adicionais durante a compilação.
-
----
-
 # Sustentabilidade
 
-A sustentabilidade é o principal foco deste projeto.
+A proposta busca reduzir o consumo computacional dos eletropostos, diminuindo o gasto energético e melhorando a eficiência no uso de energias renováveis.
 
-A redução do consumo computacional impacta diretamente:
-- na economia de energia
-- na eficiência dos eletropostos
-- no melhor aproveitamento de energia renovável
-
-Além disso:
-- reduz a necessidade de hardware potente
-- diminui geração de calor
-- melhora a vida útil do sistema
+Além disso, a redução do processamento também diminui aquecimento do hardware e aumenta a vida útil dos equipamentos.
 
 ---
 
 # Impactos Esperados
 
-## Técnicos
-- Redução do consumo computacional
-- Menor utilização de CPU
-- Maior eficiência energética
-- Melhor desempenho embarcado
-
-## Sustentáveis
-- Menor desperdício de energia
-- Melhor uso de energias renováveis
-- Redução do impacto ambiental
+- menor consumo energético
+- maior eficiência computacional
+- redução do uso de CPU
+- melhor desempenho em sistemas embarcados
+- menor desperdício de energia
 
 ---
 
@@ -211,18 +121,12 @@ Além disso:
 
 - Assembly
 - RISC-V
-- Sistemas Embarcados
-- Arquitetura de Computadores
+- Sistemas embarcados
 - Pipeline
-- Controle de clock
-- Eficiência energética
+- Arquitetura de computadores
 
 ---
 
 # Conclusão
 
-Este projeto demonstra como conceitos de Arquitetura de Computadores e Programação em Assembly podem contribuir diretamente para a sustentabilidade na mobilidade elétrica.
-
-A utilização de arquiteturas eficientes e software otimizado reduz o desperdício computacional e melhora o desempenho energético dos eletropostos.
-
-Assim, a tecnologia pode ser utilizada não apenas para desempenho, mas também para promover soluções sustentáveis e energeticamente eficientes.
+Este projeto demonstra como conceitos de Arquitetura de Computadores podem contribuir para soluções mais sustentáveis na mobilidade elétrica.
