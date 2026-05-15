@@ -1,9 +1,9 @@
 # EV Challenge 2026 — Arquitetura Sustentável para Eletropostos
 
 ## Integrantes
-- Bryan Lugli — RM: XXXXX
-- Nome Integrante — RM: XXXXX
-- Nome Integrante — RM: XXXXX
+- Bryan Lugli — RM:571350
+- Beckman Lugli — RM:573442 
+- Guiherme Xavier — RM:573053
 
 ---
 
