@@ -3,7 +3,7 @@
 ## 👥 Integrantes
 - Bryan Lugli — RM:571350
 - Beckman Lugli — RM:573442
-- Guilherme Xavier - RM:573053
+- Guilherme Xavier — RM:573053
 
 ---
 
