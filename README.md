@@ -103,7 +103,7 @@ ADD R3, R1, R2
 
 A proposta busca reduzir o consumo computacional dos eletropostos, diminuindo o gasto energético e melhorando a eficiência no uso de energias renováveis.
 
-Além disso, a redução do processamento também diminui aquecimento do hardware e aumenta a vida útil dos equipamentos.
+Além disso, a redução do processamento também diminui aquecimento do hardware e aumenta a vida útil dos equipamentos
 
 ---
 
