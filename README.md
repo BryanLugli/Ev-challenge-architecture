@@ -117,7 +117,7 @@ Além disso, a redução do processamento também diminui aquecimento do hardwar
 
 ---
 
-#  Tecnologias Utilizadas
+#  Tecnologia Utilizadas
 
 - Assembly
 - RISC-V
