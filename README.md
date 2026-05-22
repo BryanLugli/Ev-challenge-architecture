@@ -1,13 +1,13 @@
-# ⚡ EV Challenge 2026 — Arquitetura Sustentável para Eletropostos
+#  EV Challenge 2026 — Arquitetura Sustentável para Eletropostos
 
-## 👥 Integrantes
+##  Integrantes
 - Bryan Lugli — RM:571350
 - Beckman Lugli — RM:573442
 - Guilherme Xavier — RM:573053
 
 ---
 
-# 🎯 Objetivo do Projeto
+#  Objetivo do Projeto
 
 O objetivo deste projeto é desenvolver uma proposta de solução computacional eficiente para eletropostos, utilizando conceitos de Arquitetura de Computadores e programação em Assembly.
 
@@ -15,7 +15,7 @@ A ideia principal é reduzir o consumo energético causado pelo processamento co
 
 ---
 
-# ❗ Problema
+#  Problema
 
 Atualmente, muitos eletropostos utilizam softwares desenvolvidos em linguagens de alto nível executados em hardwares genéricos. Isso pode gerar maior consumo energético e uso excessivo do processador, principalmente em tarefas simples como autenticação de usuários, leitura de sensores e controle de carregamento.
 
@@ -23,7 +23,7 @@ Além disso, o excesso de processamento aumenta a quantidade de ciclos de CPU ut
 
 ---
 
-# 📌 Justificativa
+#  Justificativa
 
 Mesmo sendo utilizados em um contexto sustentável, os eletropostos também precisam possuir sistemas computacionais eficientes.
 
@@ -31,7 +31,7 @@ A otimização do software e da arquitetura utilizada pode reduzir desperdícios
 
 ---
 
-# 💡 Proposta de Solução
+#  Proposta de Solução
 
 Nossa proposta consiste no desenvolvimento de um módulo otimizado em Assembly utilizando arquitetura RISC-V.
 
@@ -45,7 +45,7 @@ A utilização de Assembly permite maior controle sobre o hardware, reduzindo a 
 
 ---
 
-# 🖥️ Arquitetura Utilizada
+#  Arquitetura Utilizada
 
 Foi escolhida a arquitetura RISC-V por possuir um conjunto de instruções mais simples e eficiente.
 
@@ -53,25 +53,25 @@ Diferente de arquiteturas mais complexas, o modelo RISC trabalha com menos instr
 
 ---
 
-# ⚙️ Conceitos Aplicados
+#  Conceitos Aplicados
 
-## 🔄 Pipeline
+##  Pipeline
 
 O pipeline permite que o processador execute diferentes etapas simultaneamente, aumentando o desempenho e reduzindo desperdícios computacionais.
 
-## ⏱️ Clock e ciclos de CPU
+##  Clock e ciclos de CPU
 
 Quanto maior a quantidade de ciclos utilizados por um programa, maior será o consumo de energia.
 
 Com Assembly, é possível reduzir instruções desnecessárias e melhorar a eficiência do processamento.
 
-## 🔋 Sistemas embarcados
+##  Sistemas embarcados
 
 O projeto foi pensado para rodar em sistemas embarcados e microcontroladores de baixo consumo energético.
 
 ---
 
-# 🔍 Comparação entre Alto Nível e Assembly
+#  Comparação entre Alto Nível e Assembly
 
 Linguagens de alto nível são mais fáceis de programar, porém geram mais instruções durante a compilação.
 
@@ -79,7 +79,7 @@ Já o Assembly possui acesso mais direto ao hardware, permitindo maior otimizaç
 
 ---
 
-# 💻 Exemplo de Código em C
+#  Exemplo de Código em C
 
 ```c
 int soma(int a, int b){
@@ -89,7 +89,7 @@ int soma(int a, int b){
 
 ---
 
-# 🧠 Exemplo em Assembly
+#  Exemplo em Assembly
 
 ```assembly
 LI R1, 1
@@ -99,7 +99,7 @@ ADD R3, R1, R2
 
 ---
 
-# 🌱 Sustentabilidade
+#  Sustentabilidade
 
 A proposta busca reduzir o consumo computacional dos eletropostos, diminuindo o gasto energético e melhorando a eficiência no uso de energias renováveis.
 
@@ -107,7 +107,7 @@ Além disso, a redução do processamento também diminui aquecimento do hardwar
 
 ---
 
-# 📈 Impactos Esperados
+#  Impactos Esperados
 
 - menor consumo energético
 - maior eficiência computacional
@@ -117,7 +117,7 @@ Além disso, a redução do processamento também diminui aquecimento do hardwar
 
 ---
 
-# 🛠️ Tecnologias Utilizadas
+#  Tecnologias Utilizadas
 
 - Assembly
 - RISC-V
@@ -127,7 +127,7 @@ Além disso, a redução do processamento também diminui aquecimento do hardwar
 
 ---
 
-# ✅ Conclusão
+#  Conclusão
 
 Este projeto demonstra como conceitos de Arquitetura de Computadores podem contribuir para soluções mais sustentáveis na mobilidade elétrica.
 
